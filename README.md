@@ -1,4 +1,3 @@
-# Virtual_classroom_manager
 
 # Virtual Classroom Manager
 
