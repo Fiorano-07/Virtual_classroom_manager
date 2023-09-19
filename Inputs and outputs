@@ -1,0 +1,35 @@
+
+TEST CASE - 1 [ ADDING CLASSROOM ] 
+Enter a command (Type 'exit' to quit): add_classroom English_1A
+Classroom : 'English_1A' has been created.
+Enter a command (Type 'exit' to quit): add_classroom Mathematics_1A
+Classroom : 'Mathematics_1A' has been created.
+Enter a command (Type 'exit' to quit): add_classroom English_1A
+Classroom : 'English_1A' already exists.
+
+TEST CASE - 2 [ ADDING STUDENT ] 
+Enter a command (Type 'exit' to quit): add_student SHUBHAM Mathematics_1A
+Student : 'SHUBHAM' has been enrolled in Mathematics_1A.
+Enter a command (Type 'exit' to quit): add_student SHREYA English_1A
+Student : 'SHREYA' has been enrolled in English_1A.
+Enter a command (Type 'exit' to quit): add_student SHREYA english_1A
+Classroom : 'english_1A' does not exist.
+Enter a command (Type 'exit' to quit): add_student SHREYA English_1A
+Student : 'SHREYA' is already enrolled in a class.
+ 
+TEST CASE - 3 [ SCHEDULING ASSIGNMENT ]
+Enter a command (Type 'exit' to quit): schedule_assignment English_1A Project 1
+Assignment for 'English_1A' has been scheduled.
+Enter a command (Type 'exit' to quit): schedule_assignment Mathematics_1A Project 2
+Assignment for 'Mathematics_1A' has been scheduled.
+Enter a command (Type 'exit' to quit): submit_assignment SHUBHAM Mathematics Project 2
+Student 'SHUBHAM' is not enrolled in 'Mathematics'.
+Enter a command (Type 'exit' to quit): submit_assignment SHUBHAM Mathematics_1A Project 2
+Assignment submitted by Student 'SHUBHAM' in 'Mathematics_1A'.
+Enter a command (Type 'exit' to quit): submit_assignment SHREYA English_1A Project 1
+Assignment submitted by Student 'SHREYA' in 'English_1A'.
+Enter a command (Type 'exit' to quit): submit_assignment SHUBHAM Mathematics_1A Project 1
+No matching assignment found for 'Mathematics_1A'.
+
+EXIT
+Enter a command (Type 'exit' to quit): exit
